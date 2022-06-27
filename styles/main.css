@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    margin: 24px;
+    padding: 24px;
+}
+body{
+    background-color: black;
+}
+a{
+    border: 1px solid beige;
+    border-radius: 20px;
+    margin: 24px;
+    padding: 8px;
+    text-decoration-line: none;
+    color: rgb(202, 140, 26);
+}
+
+h1{
+    
+    width: 640px;
+    height: 50px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+}
+h2{
+    
+    color: aliceblue;
+    font-size: large;
+}
+p{
+    
+    color: aliceblue;
+    
+}
+.recipes{
+    list-style:none;
+    border: 1px solid red;
+    color:rgb(202, 140, 26);
+    font-size: xx-large;
+    padding: 50px;
+}
+.recipes ul li::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: aliceblue; 
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+main section{
+    display: flex;
+}
+.how-to-make{
+    border: 1px solid red;
+    color :rgb(202, 140, 26);
+    font-size: large;
+}
+.htw-olist {
+    list-style-type: none;
+    padding: 24px;
+    margin: 24px;
+    
+}
+.htw-olist ol {
+    margin-left: 2em;
+}
+.htw-olist li {
+    counter-increment: count-me;
+}
+.htw-olist li::before {
+    content: counter(count-me) ". ";
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -1.3em;
+    top: .05em;
+    color: aliceblue;
+    font-weight: bold;
+}
